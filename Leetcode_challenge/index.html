@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Simulator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>🤖 Robot Simulator</h1>
+
+<div class="controls">
+  <input type="number" id="width" placeholder="Width" value="6">
+  <input type="number" id="height" placeholder="Height" value="5">
+  <input type="number" id="steps" placeholder="Steps" value="10">
+  
+  <button onclick="initRobot()">Initialize</button>
+  <button onclick="moveRobot()">Move</button>
+</div>
+
+<p id="status"></p>
+
+<div id="grid"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
