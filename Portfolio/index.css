@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+/* Navbar hover underline */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #a855f7;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+/* HERO SECTION */
+.firstsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  flex-wrap: wrap;
+}
+
+.firstsection > div {
+  width: 40%;
+}
+
+.leftsection {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+.rightsection img {
+  width: 80%;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+  font-weight: 600;
+}
+
+#element {
+  color: rgb(161, 88, 230);
+}
+
+/* MAIN CONTAINER */
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 80px;
+}
+
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  padding: 60px 0;
+  border-top: 1px solid rgba(156, 151, 241, 0.3);
+}
+
+.secondsection:first-of-type {
+  border-top: none;
+}
+
+/* EXTRA SPACE AFTER EDUCATION */
+#education {
+  margin-bottom: 120px;
+}
+
+.secondsection h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-gray {
+  color: #888;
+  font-size: 14px;
+}
+
+/* ABOUT TEXT */
+#about p {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #ccc;
+  font-size: 15px;
+}
+
+/* EDUCATION */
+.secondsection .box {
+  background: rgba(156, 151, 241, 0.4);
+  width: 79vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondsection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 120px;
+}
+
+.image-top {
+  width: 32px;
+  position: relative;
+  top: -36px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 54px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 60px;
+  font-size: 14px;
+  width: 150px;
+  color: grey;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a855f7; /* ✅ HR line below year */
+}
+
+/* LIST (Projects + Skills) */
+.secondsection ul {
+  margin-top: 20px;
+}
+
+.secondsection ul li {
+  background-color: #1f1f2e;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  list-style: none;
+  transition: 0.3s;
+}
+
+.secondsection ul li:hover {
+  transform: translateX(5px);
+  background-color: #2a2a3d;
+}
+
+/* CERTIFICATIONS */
+.cert-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+}
+
+.cert-card {
+  background-color: #1f1f2e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+  margin-right: 50px;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+  color: #a855f7;
+}
+
+.cert-card p {
+  color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0e0e1a;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  flex-wrap: wrap;
+}
+
+.footer-left h2 {
+  margin-bottom: 5px;
+}
+
+.footer-left p {
+  color: gray;
+  font-size: 14px;
+}
+
+/* ICONS */
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-right a:hover {
+  color: #a855f7;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* TOOLTIP */
+.icon {
+  position: relative;
+}
+
+.icon::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.icon:hover::after {
+  opacity: 1;
+}
+
+/* FOOTER TEXT */
+.footer-align {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+
+/* LINKS */
+.linkchange {
+  color: rgb(123, 67, 187);
+}
