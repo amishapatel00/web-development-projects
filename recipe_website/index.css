@@ -90,6 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2A7B9B", endC
           box-shadow: 3px 3px 50px black;
           border-radius: 20px;
           font-size: 0;
+           
 }
 .rightBox img{
           height: 250px;
