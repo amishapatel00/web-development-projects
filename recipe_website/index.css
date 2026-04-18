@@ -1,0 +1,142 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+
+#navList{
+          list-style: none;
+          font-size: 2.5rem;
+          display: flex;
+          justify-content: space-around;
+        padding: 15px;
+          width: 100%;
+
+}
+.container{
+         min-height: 100vh;
+          width: 100%;
+          overflow-x: hidden;
+          background: #dfeef0;
+background: linear-gradient(90deg, rgba(223, 238, 240, 1) 0%, rgba(67, 166, 143, 0.62) 100%, rgba(76, 158, 114, 1) 94%, rgba(237, 221, 83, 1) 42%);
+          
+}
+.navContainer{
+          width: 100%;
+background: #2A7B9B;
+background: -webkit-linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+background: -moz-linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2A7B9B", endColorstr="#EDDD53", GradientType=1);
+          min-height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+}
+#navLogo{
+          font-size: 2.5rem;
+          color:white ;
+}
+nav{
+          width: 100%;
+          
+          
+
+}
+a{
+          text-decoration: none;
+           color:white ;
+}
+#itemFlex{
+          display: flex;
+          gap: 40px;
+}
+.footerBox{
+width: 100%;
+background: #2A7B9B;
+background: -webkit-linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+background: -moz-linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 100%, rgba(76, 158, 114, 1) 27%, rgba(237, 221, 83, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2A7B9B", endColorstr="#EDDD53", GradientType=1);
+          min-height: 50px;
+          text-align: center;
+          color: azure;
+          font-size: 1.5rem;
+}
+.contentBox{
+          width: 50%;
+          margin: auto;
+          /* border: 1px solid black; */
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          gap: 70px;
+          padding: 3rem;
+          box-shadow: 3px 3px 30px black;
+}
+.item
+{
+         
+          display: flex;
+         justify-content: space-around;
+          align-items: center;
+}
+.rightBox{
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s linear 0s;
+          box-shadow: 3px 3px 50px black;
+          border-radius: 20px;
+          font-size: 0;
+}
+.rightBox img{
+          height: 250px;
+          border-radius: 20px;
+          display: block;
+}
+.rightBox:hover{
+          transform: scale(1.1);
+          transition: all 0.6s 0s;
+
+}
+.rightBox .overlay
+{
+          position: absolute;
+          top :0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(58, 56, 56, 0.767);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius:20px ;
+          opacity: 0;
+          transition: all 0.2s linear 0s;
+
+}
+.rightBox:hover .overlay{
+          opacity: 1;
+}
+.rightBox .overlay a{
+          color: white;
+          font-size: 1.2rem;
+
+}
+.leftBox{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          
+}
+.leftBox h2{
+          font-size: 1.9rem ;
+}
+
+.RecipeBox{
+          font-size: 1rem;
+
+}
+
