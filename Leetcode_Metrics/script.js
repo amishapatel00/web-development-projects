@@ -184,5 +184,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Optional: load a default user on page load
-  fetchUserDetails("neetcode");
+  
 });
